@@ -1,0 +1,3 @@
+Kong Judge is intended to be a judge similar to spoj.pl but with an improved point system, ranking, and achievements/badges.
+
+The project (or at least initially) will be built using Spring MVC, MongoDB, and deployed using Tomcat.
