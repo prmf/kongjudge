@@ -367,36 +367,2711 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Nov 05 21:31:52
 Served asset /application.js - 304 Not Modified (0ms)
 
 
-Started GET "/" for 192.168.1.115 at 2013-04-27 05:09:48 -0700
+Started GET "/" for 127.0.0.1 at Sat Nov 05 22:16:20 -0400 2011
   Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (3.8ms)
-Cache for Asset (application.js) is stale
-/usr/lib/ruby/gems/1.8/gems/jquery-rails-1.0.16/vendor/assets/javascripts/jquery.js isn't in paths: /home/miorel/repofix/KongJudge/app/assets/images, /home/miorel/repofix/KongJudge/app/assets/javascripts, /home/miorel/repofix/KongJudge/app/assets/stylesheets, /home/miorel/repofix/KongJudge/vendor/assets/stylesheets, /var/lib/gems/1.9.1/gems/jquery-rails-1.0.16/vendor/assets/javascripts
-Compiled application.js  (2ms)  (pid 2910)
-Compiled jquery.js  (0ms)  (pid 2910)
-Compiled jquery_ujs.js  (0ms)  (pid 2910)
-Completed 200 OK in 66ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 85ms (Views: 84.7ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/assets/home.css?body=1" for 192.168.1.115 at 2013-04-27 05:09:49 -0700
-Served asset /home.css - 200 OK (2ms)
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Nov 05 22:16:20 -0400 2011
+Served asset /application.css - 200 OK (2ms)
 
 
-Started GET "/assets/application.css?body=1" for 192.168.1.115 at 2013-04-27 05:09:49 -0700
-Served asset /application.css - 200 OK (0ms)
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Nov 05 22:16:20 -0400 2011
+Served asset /home.css - 200 OK (3ms)
 
 
-Started GET "/assets/application.js?body=1" for 192.168.1.115 at 2013-04-27 05:09:49 -0700
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Nov 05 22:16:20 -0400 2011
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Nov 05 22:16:20 -0400 2011
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Nov 05 22:16:20 -0400 2011
 Served asset /application.js - 200 OK (0ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (142.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (79.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSpojusers (20111106030544)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "spojusers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "lastUpdate" date, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111106030544')[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("spojusers")
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.115 at 2013-04-27 05:09:49 -0700
-Served asset /jquery_ujs.js - 200 OK (3ms)
+Started GET "/" for 127.0.0.1 at Sat Nov 05 23:13:41 -0400 2011
+  Processing by SpojusersController#index as HTML
+Rendered spojusers/index.html.erb within layouts/application (0.3ms)
+Compiled application.css  (3ms)  (pid 2571)
+Compiled spojusers.css  (2ms)  (pid 2571)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/assets/jquery.js?body=1" for 192.168.1.115 at 2013-04-27 05:09:49 -0700
-Served asset /jquery.js - 200 OK (2ms)
-
-
-Started GET "/assets/application.css?body=1" for 192.168.1.115 at 2013-04-27 05:10:10 -0700
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Nov 05 23:13:41 -0400 2011
 Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sat Nov 05 23:13:41 -0400 2011
+Served asset /spojusers.css - 200 OK (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Nov 05 23:13:41 -0400 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Nov 05 23:13:41 -0400 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Nov 05 23:13:41 -0400 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Nov 05 23:13:41 -0400 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 12:38:19 -0500 2011
+
+SyntaxError (/home/ufpt3/prmf/kongjudge/app/controllers/spojusers_controller.rb:12: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:13:20 -0500 2011
+  Processing by SpojusersController#index as HTML
+Rendered spojusers/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 172ms (Views: 171.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:13:20 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:13:20 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:13:20 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:13:20 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:13:20 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:13:20 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:13:23 -0500 2011
+  Processing by SpojusersController#index as HTML
+Rendered spojusers/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:13:23 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:13:23 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:13:23 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:13:23 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:13:23 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:13:23 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:14:15 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+ERROR: compiling _app_views_spojusers_show_html_erb___753596187__617447278 RAISED compile error
+/home/ufpt3/prmf/kongjudge/app/views/spojusers/show.html.erb:13: syntax error, unexpected kENSURE, expecting kEND
+/home/ufpt3/prmf/kongjudge/app/views/spojusers/show.html.erb:15: syntax error, unexpected $end, expecting kEND
+Function body:           def _app_views_spojusers_show_html_erb___753596187__617447278(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "spojusers/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('
+'); if @spojusers.blank? 
+@output_buffer.safe_concat('	<p>No, spojusers on record</p>
+'); else 
+@output_buffer.safe_concat('	<ul>
+');	 for spojuser in @spojusers do 
+@output_buffer.safe_concat('		<li>');@output_buffer.append= ( spojuser.username );@output_buffer.safe_concat('</li>
+');	 end 
+@output_buffer.safe_concat('	</ul>
+<%end>
+	
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/ufpt3/prmf/kongjudge/app/views/spojusers/show.html.erb:15:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/template.rb:190:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/template.rb:143:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/notifications.rb:55:in `instrument'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/template.rb:142:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:40:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `instrument'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `instrument'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:12:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_view/renderer/renderer.rb:17:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:99:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/lib/ruby/gems/1.8/gems/activerecord-3.1.1/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/abstract_controller/base.rb:167:in `process_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:416:in `_run__477106754__process_action__453433196__callbacks'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:386:in `send'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:81:in `send'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `instrument'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `instrument'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/usr/lib/ruby/gems/1.8/gems/activerecord-3.1.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/abstract_controller/base.rb:121:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:45:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal.rb:193:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_controller/metal.rb:236:in `action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `recognize'
+/usr/lib/ruby/gems/1.8/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/usr/lib/ruby/gems/1.8/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/usr/lib/ruby/gems/1.8/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:532:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/usr/lib/ruby/gems/1.8/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-3.1.1/lib/active_record/query_cache.rb:62:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-3.1.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/callbacks.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:81:in `send'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/lib/ruby/gems/1.8/gems/railties-3.1.1/lib/rails/rack/logger.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/activesupport-3.1.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/static.rb:53:in `call'
+/usr/lib/ruby/gems/1.8/gems/railties-3.1.1/lib/rails/engine.rb:456:in `call'
+/usr/lib/ruby/gems/1.8/gems/railties-3.1.1/lib/rails/rack/content_length.rb:16:in `call'
+/usr/lib/ruby/gems/1.8/gems/railties-3.1.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.3.5/lib/rack/handler/webrick.rb:13:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.3.5/lib/rack/server.rb:265:in `start'
+/usr/lib/ruby/gems/1.8/gems/railties-3.1.1/lib/rails/commands/server.rb:70:in `start'
+/usr/lib/ruby/gems/1.8/gems/railties-3.1.1/lib/rails/commands.rb:54
+/usr/lib/ruby/gems/1.8/gems/railties-3.1.1/lib/rails/commands.rb:49:in `tap'
+/usr/lib/ruby/gems/1.8/gems/railties-3.1.1/lib/rails/commands.rb:49
+script/rails:6:in `require'
+script/rails:6
+Rendered spojusers/show.html.erb within layouts/application (34.8ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (compile error
+/home/ufpt3/prmf/kongjudge/app/views/spojusers/show.html.erb:13: syntax error, unexpected kENSURE, expecting kEND
+/home/ufpt3/prmf/kongjudge/app/views/spojusers/show.html.erb:15: syntax error, unexpected $end, expecting kEND):
+    10: <%end>
+    11: 	
+  app/views/spojusers/show.html.erb:15:in `compile'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:14:33 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:14:33 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:14:33 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:14:33 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:14:33 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:14:33 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:14:33 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:17:55 -0500 2011
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:18:41 -0500 2011
+
+NoMethodError (undefined method `matchs' for #<ActionDispatch::Routing::Mapper:0xb64c460c>):
+  config/routes.rb:5
+  config/routes.rb:1
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:18:52 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 88ms (Views: 87.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:18:52 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:18:52 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:18:52 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:18:52 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:18:52 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:18:52 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:19:11 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:19:11 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:19:11 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:19:11 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:19:11 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:19:11 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:19:11 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:21:37 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:21:38 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:21:38 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:21:38 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:21:38 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:21:38 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:21:38 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:21:58 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"rsalazar", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `stringify_keys' for :username:Symbol):
+  app/controllers/spojusers_controller.rb:10:in `new'
+  app/controllers/spojusers_controller.rb:10:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:22:05 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:22:05 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:22:05 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:22:05 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:22:05 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:22:05 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:22:05 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:23:42 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:42 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:42 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:42 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:42 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:42 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:42 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:23:44 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:44 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:44 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:44 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:44 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:44 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:44 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:23:48 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"rsalazar", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+  [1m[35mSQL (162.5ms)[0m  INSERT INTO "spojusers" ("created_at", "lastUpdate", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Sun, 06 Nov 2011 18:23:48 UTC +00:00], ["lastUpdate", Sun Nov 06 13:23:48 -0500 2011], ["updated_at", Sun, 06 Nov 2011 18:23:48 UTC +00:00], ["username", "rsalazar"]]
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 256ms (Views: 17.8ms | ActiveRecord: 162.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:48 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:48 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:48 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:48 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:48 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:48 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:23:55 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:56 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:56 -0500 2011
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:56 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:56 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:56 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:56 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:23:57 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:57 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:57 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:57 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:57 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:57 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:57 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:23:58 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:58 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:58 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:58 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:58 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:23:58 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:23:58 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:25:31 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:31 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:31 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:31 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:31 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:31 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:31 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:25:35 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"rsalazar", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "spojusers" ("created_at", "lastUpdate", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Sun, 06 Nov 2011 18:25:35 UTC +00:00], ["lastUpdate", Sun Nov 06 13:25:35 -0500 2011], ["updated_at", Sun, 06 Nov 2011 18:25:35 UTC +00:00], ["username", "rsalazar"]]
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 113ms (Views: 16.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:35 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:35 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:35 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:35 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:35 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:35 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:25:39 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.2ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:39 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:40 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:40 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:40 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:40 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:40 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:25:41 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.2ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:41 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:41 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:41 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:41 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:41 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:41 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:25:42 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:42 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:42 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:42 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:25:42 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:42 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:25:42 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:26:30 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:26:30 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:26:30 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:26:30 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:26:30 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:26:30 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:26:30 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/destroyall" for 127.0.0.1 at Sun Nov 06 13:29:38 -0500 2011
+
+ActionController::RoutingError (No route matches [GET] "/destroyall"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/destroyall" for 127.0.0.1 at Sun Nov 06 13:30:02 -0500 2011
+  Processing by SpojusersController#destroyall as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "spojusers" WHERE "spojusers"."id" = ?  [["id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "spojusers" WHERE "spojusers"."id" = ?[0m  [["id", 2]]
+Rendered spojusers/destroyall.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 193ms (Views: 16.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:30:02 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:30:02 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:30:02 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:30:02 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:30:02 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:30:02 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/%5C" for 127.0.0.1 at Sun Nov 06 13:30:07 -0500 2011
+
+ActionController::RoutingError (No route matches [GET] "/%5C"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:30:08 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:30:08 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:30:08 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:30:08 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:30:08 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:30:08 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:30:08 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:32:37 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 92ms (Views: 89.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:32:37 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:32:37 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:32:37 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:32:37 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:32:37 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:32:37 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/add" for 127.0.0.1 at Sun Nov 06 13:32:40 -0500 2011
+
+ActionController::RoutingError (No route matches [GET] "/add"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:32:42 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:32:42 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:32:42 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:32:42 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:32:42 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:32:42 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:32:42 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:32:45 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"rsalazar", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (Unknown key: username):
+  app/controllers/spojusers_controller.rb:11:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:37:02 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:37:02 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:37:02 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:37:02 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:37:02 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:37:02 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:37:02 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:37:05 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:37:05 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:37:05 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:37:05 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:37:05 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:37:05 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:37:05 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:37:07 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"rsalazar", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+  [1m[36mSpojuser Load (0.2ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" WHERE "spojusers"."id" IN ('username', 0)[0m
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find all Spojusers with IDs (username, rsalazar) (found 0 results, but was looking for 2)):
+  app/controllers/spojusers_controller.rb:11:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:38:35 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:38:35 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:38:35 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:38:35 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:38:35 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:38:35 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:38:35 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:38:37 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:38:37 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:38:37 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:38:37 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:38:37 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:38:37 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:38:37 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:38:40 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"rsalazar", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (Unknown key: username):
+  app/controllers/spojusers_controller.rb:11:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:51:25 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:25 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:25 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:25 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:25 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:25 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:25 -0500 2011
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:51:29 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"rsalazar", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 63ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:29 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:29 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:29 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:29 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:29 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:29 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:51:32 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:32 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:32 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:32 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:32 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:32 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:32 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:51:37 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:37 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:37 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:37 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:37 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:37 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:37 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:51:38 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 92ms (Views: 90.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:39 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:39 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:39 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:39 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:39 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:39 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:51:40 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.3ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:40 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:40 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:40 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:40 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:40 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:40 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:51:41 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.2ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:41 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:41 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:51:41 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:41 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:41 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:51:41 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:52:03 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:03 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:03 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:03 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:03 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:03 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:03 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:52:06 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"test", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:06 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:06 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:06 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:06 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:06 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:06 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:52:08 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:08 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:08 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:08 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:08 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:08 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:08 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:52:09 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:53:57 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:53:57 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:53:57 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:53:57 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:53:57 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:53:57 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:53:57 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:53:59 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:53:59 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:53:59 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:53:59 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:53:59 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:53:59 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:53:59 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:54:04 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"testu", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "spojusers" ("created_at", "lastUpdate", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 06 Nov 2011 18:54:04 UTC +00:00], ["lastUpdate", nil], ["updated_at", Sun, 06 Nov 2011 18:54:04 UTC +00:00], ["username", "error"]]
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 110ms (Views: 15.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:04 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:04 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:04 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:04 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:04 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:04 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:54:07 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:07 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:07 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:07 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:07 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:07 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:07 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:54:08 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:09 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/destoryall" for 127.0.0.1 at Sun Nov 06 13:54:21 -0500 2011
+
+ActionController::RoutingError (No route matches [GET] "/destoryall"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/destroyall" for 127.0.0.1 at Sun Nov 06 13:54:25 -0500 2011
+
+SyntaxError (/home/ufpt3/prmf/kongjudge/app/controllers/spojusers_controller.rb:16: syntax error, unexpected tIVAR, expecting kEND
+		//@spojuser = Spojuser.create(:username => "error");
+		           ^):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/destroyall" for 127.0.0.1 at Sun Nov 06 13:54:38 -0500 2011
+  Processing by SpojusersController#destroyall as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "spojusers" WHERE "spojusers"."id" = ?[0m  [["id", 3]]
+Rendered spojusers/destroyall.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 114ms (Views: 16.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:38 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:38 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:38 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:38 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:38 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:38 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:54:41 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:41 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:41 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:41 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:41 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:54:41 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:54:41 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:55:18 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:18 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:18 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:18 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:18 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:18 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:18 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:55:20 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:20 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:20 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:20 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:20 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:20 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:20 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:55:22 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"test2", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:22 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:22 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:22 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:22 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:22 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:22 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:55:24 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:24 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:24 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:24 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:25 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:25 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:25 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:55:25 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:25 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:25 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:25 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:25 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:25 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:25 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:55:26 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:26 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:26 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:26 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:26 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:26 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:26 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:55:42 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:43 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:43 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:43 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:43 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:43 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:43 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:55:44 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:44 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:44 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:44 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:44 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:44 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:44 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:55:46 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"test3", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" WHERE "spojusers"."username" = 'test3'
+  [1m[36mSQL (29.0ms)[0m  [1mINSERT INTO "spojusers" ("created_at", "lastUpdate", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 06 Nov 2011 18:55:46 UTC +00:00], ["lastUpdate", nil], ["updated_at", Sun, 06 Nov 2011 18:55:46 UTC +00:00], ["username", []]]
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 145ms (Views: 16.5ms | ActiveRecord: 29.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:46 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:46 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:46 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:46 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:47 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:47 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:55:48 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:48 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:48 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:48 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:48 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:48 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:48 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:55:49 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:49 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:49 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:55:49 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:49 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:49 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:55:49 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/destroyall" for 127.0.0.1 at Sun Nov 06 13:56:07 -0500 2011
+  Processing by SpojusersController#destroyall as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "spojusers" WHERE "spojusers"."id" = ?[0m  [["id", 4]]
+Rendered spojusers/destroyall.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 95ms (Views: 17.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:07 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:07 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:07 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:07 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:07 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:07 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:56:16 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:16 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:16 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:16 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:16 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:16 -0500 2011
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:16 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/ew" for 127.0.0.1 at Sun Nov 06 13:56:18 -0500 2011
+
+ActionController::RoutingError (No route matches [GET] "/ew"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:56:20 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:20 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:20 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:20 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:20 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:20 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:20 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:56:37 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"test5", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" WHERE "spojusers"."username" = 'test5'[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "spojusers" ("created_at", "lastUpdate", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Sun, 06 Nov 2011 18:56:37 UTC +00:00], ["lastUpdate", Sun Nov 06 13:56:37 -0500 2011], ["updated_at", Sun, 06 Nov 2011 18:56:37 UTC +00:00], ["username", "test5"]]
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 116ms (Views: 16.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:37 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:37 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:37 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:37 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:37 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:37 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:56:39 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:40 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:40 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:40 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:40 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:40 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:40 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:56:41 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:41 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:41 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:41 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:41 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:41 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:41 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:56:44 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:44 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:44 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:44 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:44 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:44 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:44 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:56:46 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"test6", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" WHERE "spojusers"."username" = 'test6'[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "spojusers" ("created_at", "lastUpdate", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Sun, 06 Nov 2011 18:56:46 UTC +00:00], ["lastUpdate", Sun Nov 06 13:56:46 -0500 2011], ["updated_at", Sun, 06 Nov 2011 18:56:46 UTC +00:00], ["username", "test6"]]
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 95ms (Views: 17.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:46 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:46 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:46 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:46 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:46 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:46 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:56:48 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:48 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:48 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:48 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:48 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:48 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:48 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/new" for 127.0.0.1 at Sun Nov 06 13:56:49 -0500 2011
+  Processing by SpojusersController#new as HTML
+Rendered spojusers/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:50 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:50 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:50 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:50 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:50 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:50 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/create" for 127.0.0.1 at Sun Nov 06 13:56:52 -0500 2011
+  Processing by SpojusersController#create as HTML
+  Parameters: {"commit"=>"Add to tracker list", "username"=>"test5", "authenticity_token"=>"74bV6FgbErbJRJJ/p1VLdmedu58IxQEa4sSnGY6wU3U=", "utf8"=>"✓"}
+  [1m[35mSpojuser Load (0.2ms)[0m  SELECT "spojusers".* FROM "spojusers" WHERE "spojusers"."username" = 'test5'
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "spojusers" ("created_at", "lastUpdate", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 06 Nov 2011 18:56:52 UTC +00:00], ["lastUpdate", nil], ["updated_at", Sun, 06 Nov 2011 18:56:52 UTC +00:00], ["username", [#<Spojuser id: 5, username: "test5", lastUpdate: "2011-11-06", created_at: "2011-11-06 18:56:37", updated_at: "2011-11-06 18:56:37">]]]
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 112ms (Views: 15.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:52 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:52 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:52 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:52 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:52 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:52 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:56:54 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:54 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:54 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:54 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:56:54 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:54 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:56:54 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/destroyall" for 127.0.0.1 at Sun Nov 06 13:57:26 -0500 2011
+  Processing by SpojusersController#destroyall as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "spojusers" WHERE "spojusers"."id" = ?  [["id", 5]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "spojusers" WHERE "spojusers"."id" = ?[0m  [["id", 6]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "spojusers" WHERE "spojusers"."id" = ?  [["id", 7]]
+Rendered spojusers/destroyall.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 262ms (Views: 16.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:57:26 -0500 2011
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:57:26 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:57:26 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:57:26 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:57:26 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:57:26 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 06 13:57:27 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[36mSpojuser Load (0.1ms)[0m  [1mSELECT "spojusers".* FROM "spojusers" [0m
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sun Nov 06 13:57:27 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sun Nov 06 13:57:27 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Sun Nov 06 13:57:28 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sun Nov 06 13:57:28 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sun Nov 06 13:57:28 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sun Nov 06 13:57:28 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 07 13:29:30 -0500 2011
+  Processing by SpojusersController#show as HTML
+  [1m[35mSpojuser Load (0.1ms)[0m  SELECT "spojusers".* FROM "spojusers" 
+Rendered spojusers/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 75ms (Views: 73.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Nov 07 13:29:30 -0500 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Nov 07 13:29:30 -0500 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spojusers.css?body=1" for 127.0.0.1 at Mon Nov 07 13:29:30 -0500 2011
+Served asset /spojusers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Nov 07 13:29:30 -0500 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Nov 07 13:29:30 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Nov 07 13:29:30 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)

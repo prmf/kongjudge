@@ -1,5 +1,16 @@
 Kongjudge::Application.routes.draw do
-  root :to => 'home#index'
+  root :to => 'spojusers#show'
+  resources :spojusers
+  
+  match 'new' => 'spojusers#new'
+  resources :spojusers
+  
+  match 'create' => 'spojusers#create'
+  resource :spojusers
+  
+  match 'destroyall' => 'spojusers#destroyall'
+  resource :spojusers
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
