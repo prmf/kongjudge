@@ -44,5 +44,8 @@ module Kongjudge
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # For devise when using heroku
+    config.assets.initialize_on_precompile = false
   end
 end
