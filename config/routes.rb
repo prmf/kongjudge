@@ -1,16 +1,6 @@
 Kongjudge::Application.routes.draw do
-  root :to => 'spojusers#show'
-  resources :spojusers
-  
-  match 'new' => 'spojusers#new'
-  resources :spojusers
-  
-  match 'create' => 'spojusers#create'
-  resource :spojusers
-  
-  match 'destroyall' => 'spojusers#destroyall'
-  resource :spojusers
-  
+  get "home/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -60,7 +50,9 @@ Kongjudge::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  # This tells Rails to map root action to 'home' controller's
+  # 'index' action.
+   root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 

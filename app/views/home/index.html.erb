@@ -1,1 +1,145 @@
-<h1>Hello, kongjudge</h1>
+<pre>
+KONG JUDGE SPEC
+
+Models: What is contained in each model object (database)
+
+Problem
+
+Requirements
+
+-We can view problems without creating an account
+
+-We can even submit without creating an account
+
+Problem - Long name
+Problem - Short name (Force UPPERCASE)
+Time of creation
+Tags
+Languages
+Time limit
+Judge type (i.e. diff output)
+Comments
+
+User
+
+Requirements
+
+The list of submissions will be linked to the Submissions object (belongs to)
+
+user-name
+password-hash
+email
+about-me
+list of problem id solves
+list of submissions ids
+isAdmin
+
+
+
+
+
+
+
+
+
+Submission
+
+Submission ID
+Code
+Result
+Problem ID
+Language
+Time of submission
+Badge
+-This is effectively a list of constraints that must be met to earn a badge.
+
+List of problems
+How many do you need to solve out of this list to earn budge [default all of list]
+Open date [default 0 AD]
+Close date [default 9999 AD]
+List of time limits [default infinity]
+List of languages [default ALL/ANY]
+Position in ranking of this problem (Possible feature for future version; difficult)
+
+
+
+
+
+
+RESTful URLS
+
+Problem
+
+Index URL -   /problems
+
+Show URL - /problems/${SHORTNAME} [create]
+
+-We plan to have the submit box on the same page as the problem description.
+
+    - i.e. submission will not have a ‘create’ GET action
+
+create URL - /problems/create
+
+update URL - /problems/${SHORTNAME}/update
+
+delete URL - /problems/${SHORTNAME}/delete
+
+
+
+
+User
+
+Index URL - N/A
+
+Show URL - /users/{$username}
+
+create URL - /register
+
+update URL - /users/${username}/update
+
+delete URL - /users/${username}/delete [only for isAdmin]
+
+
+
+
+
+
+
+
+
+
+Submission
+
+Index URL - /submissions
+
+- Show all submissions, of everyone
+
+Show URL - /submissions/${ID}
+    -If it’s not yours, it does not allow you.
+    -else, show code and details
+
+Create URL [POST] - /submissions/${problemshortname}
+
+update URL - N/A
+
+delete URL - N/A
+
+
+
+Badge
+
+index URL - /badges
+
+show URL - /badges/{ID}
+
+create URL - /badges/create
+    - [future version]
+
+update URL - N/A
+
+delete URL - N/A
+
+
+
+
+</pre>
