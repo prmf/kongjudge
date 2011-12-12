@@ -1,0 +1,7 @@
+Welcome to index.html.erb <%= @test_data %>
+
+<ul>
+<% @problems.each do |p| %>
+<li> <%= link_to p.problem_title, p %></li>
+<% end %>
+</ul>
