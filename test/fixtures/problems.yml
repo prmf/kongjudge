@@ -3,11 +3,15 @@
 one:
   problem_title: MyString
   problem_short_title: MyString
-  time_of_creation: 2011-12-10
+  problem_statement: MyText
+  input: MyText
+  solution: MyText
   time_limit: 1
 
 two:
   problem_title: MyString
   problem_short_title: MyString
-  time_of_creation: 2011-12-10
+  problem_statement: MyText
+  input: MyText
+  solution: MyText
   time_limit: 1

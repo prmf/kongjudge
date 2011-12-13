@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111210085013) do
+ActiveRecord::Schema.define(:version => 20111213095429) do
 
   create_table "badges", :force => true do |t|
     t.string   "badge_name"
@@ -29,7 +29,9 @@ ActiveRecord::Schema.define(:version => 20111210085013) do
   create_table "problems", :force => true do |t|
     t.string   "problem_title"
     t.string   "problem_short_title"
-    t.date     "time_of_creation"
+    t.text     "problem_statement"
+    t.text     "input"
+    t.text     "solution"
     t.integer  "time_limit"
     t.datetime "created_at"
     t.datetime "updated_at"
