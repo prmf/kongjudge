@@ -4,7 +4,7 @@ class ProblemsController < ApplicationController
 	end
 	
 	def show
-		@problem = Problem.find_by_name(params[:problem_short_title])
+		@problem = Problem.find_by_problem_short_title(params[:problem_short_title])
 	end
 	
 	def create #form POST
@@ -28,10 +28,5 @@ class ProblemsController < ApplicationController
 	
 	def destroy
 	
-	end
-
-	def to_param
-		# http://api.rubyonrails.org/classes/ActiveRecord/Base.html#method-i-to_param
-		problem_short_title
 	end
 end

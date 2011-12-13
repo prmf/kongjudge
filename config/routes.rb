@@ -1,7 +1,7 @@
 Kongjudge::Application.routes.draw do
   devise_for :users
 
-  match "problems/:problem_short_title" => "problems#show", :constraints => {:problem_short_title => /[A-Z]+/}
+  match "problems/:problem_short_title" => "problems#show", :constraints => {:problem_short_title => /^[A-Z]+$/}
   resources :problems
   resources :users
   resources :submissions
