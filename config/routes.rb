@@ -1,5 +1,10 @@
 Kongjudge::Application.routes.draw do
   devise_for :users
+  
+  resources :problems
+  resources :users
+  resources :submissions
+  resources :badges  
 
   get "home/index"
 
