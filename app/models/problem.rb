@@ -3,6 +3,7 @@ class Problem < ActiveRecord::Base
       has_many :submissions
       has_many :languages
       
+      validates_format_of :problem_short_title, :with => /^[A-Z]+$/      
 
   def to_param
     # http://api.rubyonrails.org/classes/ActiveRecord/Base.html#method-i-to_param
