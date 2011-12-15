@@ -1,7 +1,13 @@
 Welcome to index.html.erb <%= @test_data %>
 
+<div class="problem_create_link">
+<%= link_to "Submit a new problem", :controller => "problems", :action => "new" %>
+</div>
+
+<div class="problems_list">
 <ul>
 <% @problems.each do |p| %>
 <li> <%= link_to p.problem_title, p %></li>
 <% end %>
 </ul>
+</div>
