@@ -1,13 +1,29 @@
-Welcome to index.html.erb <%= @test_data %>
+<h2> Problems </h2>
 
 <div class="problem_create_link">
-<%= link_to "Submit a new problem", :controller => "problems", :action => "new" %>
+
 </div>
 
-<div class="problems_list">
-<ul>
-<% @problems.each do |p| %>
-<li> <%= link_to p.problem_title, p %></li>
-<% end %>
-</ul>
-</div>
+
+
+
+    <script src="js/jquery/jquery.tablesorter.min.js"></script>
+    <script >
+    $(function() {
+    $("table#sortTableExample").tablesorter({ sortList: [[1,0]] });
+    });
+    </script>
+    <table class="zebra-striped">
+	<tr>
+		<td> # </td>
+		<td> Problem </td>
+	</tr>
+    
+  	  <% @problems.each do |p| %>
+		<tr>
+		<td> <%= p.id %> </td>
+		<td> <%= link_to p.problem_title, p %> </td>
+
+		 </tr>
+	<% end %>
+    </table>

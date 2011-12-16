@@ -1,31 +1,82 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Kongjudge</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>KongJudge</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<div id="user_nav">
-	  <% if user_signed_in? %>
-	    Signed in as <%= current_user.username %>. Not you?
-	    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-	  <% else %>
-	    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
-	  <% end %>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="container-fluid">
+		<%= link_to "KongJudge", home_index_path, :class => 'brand' %>
+
+          <ul class="nav">
+            <li class="active"><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Problems", problems_path %></li>
+          </ul>
+          <% if user_signed_in? %>
+         	 <p class="pull-right">Logged in as <%= current_user.username %>. Not you? <%= link_to "Sign out", destroy_user_session_path, :method => :delete %></p>
+	<% end %>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid">
+      <div class="sidebar">
+        <div class="well">
+          <h5>Sidebar</h5>
+          <ul>
+	    <% if user_signed_in? %>
+            	<li><a href="#">My Account</a></li>
+            <% else %>
+            	<li><%= link_to "Register", new_user_registration_path %></li>
+            <% end %>
+            <li><a href="#">Leaderboard</a></li>
+          </ul>
+          
+
+
+          <ul>
+		<li><%= link_to "Submit", new_problem_path %></li>
+            <li><a href="#">News</a></li>
+            <li><a href='#'>Forums</a></li>
+            <li><a href="#">Credits</a></li>
+          </ul>
+
+            <!--
+          <h5>Sidebar</h5>
+          <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+	-->
+        </div>
+      </div>
+
+	<div class="content">
+		<%= yield %>
 	</div>
-
-	<div class="menu_bar">
-	  <ul>
-	  <li> <%= link_to "Home", root_path %> </li>
-	   <li> <%= link_to "Problems", problems_path %></li>
-	   </ul>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
-<%= yield %>
-
-</body>
+  </body>
 </html>
