@@ -1,4 +1,7 @@
 class ProblemsController < ApplicationController
+      #http://railscasts.com/episodes/210-customizing-devise
+      before_filter :authenticate_user!, :except => [:show,:index]
+
 	def index
 		@problems = Problem.all
 	end
@@ -8,7 +11,7 @@ class ProblemsController < ApplicationController
 	end
 	
 	def create #form POST
-		@problem = Problem.new(params[:problem])
+		@problem = current_user.problems.build(params[:problem])
 		if @problem.save
 			redirect_to (@problem)
 		else
