@@ -1,13 +1,17 @@
 <%= form_for(@problem) do |f| %>
   <% if @problem.errors.any? %>
-  <div id="errorExplanation">
-    <h2><%= pluralize(@problem.errors.count, "error") %> prohibited this problem from being saved:</h2>
+
+
+  <div class="alert-message block-message info" id="errorExplanation">
+    <a class="close" href="#">×</a>
+    <p><strong>Holy guacamole! This is a warning!</strong> Best check yo self, you’re not looking too good.</p></br>
     <ul>
     <% @problem.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>
     </ul>
-  </div>
+    </div>
+
   <% end %>
 
 <div class="clearfix">
@@ -54,7 +58,7 @@
 
           
 <div class="clearfix">
-	<%= f.label :time_limit %><br />
+	<%= f.label :time_limit, "Time Limit" %><br />
 	<div class="input">
 		<%= f.text_field :time_limit %>
 	</div>
