@@ -36,6 +36,9 @@
             <li class="active"><%= link_to "Home", root_path %></li>
             <li><%= link_to "Problems", problems_path %></li>
           </ul>
+            <form class="pull-left" action="">
+            <input placeholder="Search" type="text">
+          </form>
           <% if user_signed_in? %>
          	 <p class="pull-right">Logged in as <%= current_user.username %>. Not you? <%= link_to "Sign out", destroy_user_session_path, :method => :delete %></p>
 	<% end %>
