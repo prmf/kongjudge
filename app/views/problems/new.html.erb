@@ -36,11 +36,10 @@
             <label for="textarea">Problem Statement</label>
 
             <div class="input">
-              <textarea class="xxlarge" id="textarea2" name="textarea2" rows="8"></textarea>
-              <!--<span class="help-block">
-                Block of help text to describe the field above if need be.
+		<%= f.text_area :problem_statement, :size => "8" %>
+              <span class="help-block">
+		Pull on the corner to expand this box
               </span>
-              -->
             </div>
           </div><!-- /clearfix -->
 
@@ -48,7 +47,7 @@
             <label for="fileInput">Input File</label>
 
             <div class="input">
-              <input class="input-file" id="fileInput" name="fileInput" type="file" />
+		<%= f.file_field :input %>
             </div>
           </div><!-- /clearfix -->
 
@@ -56,7 +55,7 @@
             <label for="fileInput">Solution File</label>
 
             <div class="input">
-              <input class="input-file" id="fileInput" name="fileInput" type="file" />
+		<%= f.file_field :solution %>
             </div>
           </div><!-- /clearfix -->
 
