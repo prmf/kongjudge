@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>KongJudge</title>
+
+    <% @yielded_title = yield(:title) %>
+    <% if @yielded_title != "" %>
+ 	   <title>KongJudge<%= " - " +  @yielded_title%></title>
+    <% else %>
+  	  <title>KongJudge</title>
+    <% end %>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -53,7 +59,6 @@
     <div class="container-fluid">
       <div class="sidebar">
         <div class="well">
-          <h5>Sidebar</h5>
           <ul>
 	    <% if user_signed_in? %>
             	<li><a href="#">My Account</a></li>
