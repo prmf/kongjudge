@@ -15,3 +15,16 @@ Welcome to show.html.erb
 
 <div class="problem_submission_box">
 </div>
+
+
+<%= form_for @submission do |f| %>
+
+            <div class="input">
+		<%= f.text_area :code, :size => "8" %>
+              <span class="help-block">
+		Paste your solution
+              </span>
+            </div>
+	
+ 	 <div class="actions"><%= f.submit "Submit Solution", :class=>"btn primary" %></div>
+<% end %>

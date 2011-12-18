@@ -7,6 +7,7 @@ class ProblemsController < ApplicationController
 	end
 	
 	def show
+		@submission = Submission.new
 		@problem = Problem.find_by_problem_short_title(params[:problem_short_title])
 	end
 	
