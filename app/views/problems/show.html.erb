@@ -29,6 +29,7 @@ Welcome to show.html.erb
 		Paste your solution
               </span>
             </div>
+	<%= hidden_field_tag(:problem_short_title, @problem) %>
 	
  	 <div class="actions"><%= f.submit "Submit Solution", :class=>"btn primary" %></div>
 <% end %>
