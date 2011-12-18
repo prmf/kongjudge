@@ -9,9 +9,11 @@ What is the process for building and deploying?
 
 2) Test your changes using a local webserver
    - build Gemfile.lock using `bundle --without production`
+      - if you don't have Dev
    - create the database `rake db:migrate`
+      - if your "rake db:migrate" fails with error "uninitialized constant Rake::DSL", add the line 'require 'rake/dsl_definition' to your Rakefile
    - use `rails server`
-     	 -This runs a local instance;viewable at 127.0.0.1:3000
+      - This runs a local instance;viewable at 127.0.0.1:3000
 
 2) git commit -m "Message stating what I did to the project"
    -use `git status` to confirm that all your files are added before commiting
