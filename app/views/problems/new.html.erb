@@ -47,7 +47,7 @@
             <label for="fileInput">Input File</label>
 
             <div class="input">
-		<%= f.file_field :input %>
+		<%= f.text_area :input, :size => "8" %>
             </div>
           </div><!-- /clearfix -->
 
@@ -55,7 +55,7 @@
             <label for="fileInput">Solution File</label>
 
             <div class="input">
-		<%= f.file_field :solution %>
+		<%= f.text_area :solution, :size => "8" %>
             </div>
           </div><!-- /clearfix -->
 
