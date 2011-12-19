@@ -17,7 +17,7 @@
   	  <% @user.submissions.each do |s| %>
 		<tr>
 		<td> <%= s.code %> </td>
-		<td> <%= s.problem_id  %> </td>
+		<td> <%= s.problem.id  %> </td>
 		 </tr>
 	<% end %>
     </table>
