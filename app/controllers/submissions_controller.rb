@@ -1,9 +1,8 @@
 class SubmissionsController < ApplicationController
 	def create
-		@curr_problem = Problem.find_by_problem_short_title(params[:problem_short_title])
-
-		puts @curr_problem
-		@submission = @curr_problem.submissions.build(params[:submission])
+		problem_short_title = params[:submission][:problem_short_title]
+		@curr_problem = Problem.find_by_problem_short_title(problem_short_title)
+		@submission = @curr_problem.submissions.build(:code => params[:submission][:code])
 		if @submission.save
 			redirect_to (root_path)
 		else
