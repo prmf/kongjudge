@@ -1,3 +1,23 @@
-Welcome to users show.html.erb
+<% title "User Submissions" %>
 
-<%= @user.submissions %>
+<h2><%= yield(:title) %></h2><br/>
+
+    <script src="js/jquery/jquery.tablesorter.min.js"></script>
+    <script >
+    $(function() {
+    $("table#sortTableExample").tablesorter({ sortList: [[1,0]] });
+    });
+    </script>
+    <table class="zebra-striped">
+	<tr>
+		<td> # </td>
+		<td> Problem ID</td>
+	</tr>
+    
+  	  <% @user.submissions.each do |s| %>
+		<tr>
+		<td> <%= s.code %> </td>
+		<td> <%= s.problem_id  %> </td>
+		 </tr>
+	<% end %>
+    </table>
