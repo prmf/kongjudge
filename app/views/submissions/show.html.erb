@@ -1,0 +1,22 @@
+welcome to the view for submissions#show !!!
+
+<% if @submissions.is_a?(Array) 
+	@submissions.each do |s| %>
+		<table class="zebra-striped">
+		<tr>
+		<td> <%= s.id %> </td>
+		<td> <%= s.created_at %> </td>
+		<td> <%= s.problem.problem_short_title %> </td>
+		<td> <%= s.result %> </td>
+		</tr>
+	<% end %>
+	</table>
+<% else %>
+	<table class="zebra-striped">
+	<tr>
+	<td> <%= @submissions.id %> </td>
+	<td> <%= @submissions.created_at %> </td>
+	<td> <%= @submissions.problem.problem_short_title  %> </td>
+	<td> <%= @submissions.result %> </td>
+	</tr>
+<% end %>
