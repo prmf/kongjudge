@@ -12,12 +12,14 @@
 	<tr>
 		<td> # </td>
 		<td> Problem ID</td>
+		<td> Result</td>
 	</tr>
     
   	  <% @user.submissions.each do |s| %>
 		<tr>
 		<td> <%= s.code %> </td>
 		<td> <%= s.problem.id  %> </td>
+		<td> <%= s.result  %> </td>
 		 </tr>
 	<% end %>
     </table>

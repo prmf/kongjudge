@@ -18,6 +18,7 @@ class SubmissionsController < ApplicationController
 		@submission = @curr_problem.submissions.build(:code => params[:submission][:code], :user => current_user, :problem => @curr_problem)
 		@submission = current_user.submissions.build(:code => params[:submission][:code], :user => current_user, :problem => @curr_problem)
 		if @submission.save
+			@submission.judge_submission
 			redirect_to (root_path)
 		else
 		 	render :new
