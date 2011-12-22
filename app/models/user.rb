@@ -12,4 +12,9 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :username, :email, :password, :password_confirmation, :remember_me
+  
+  	def to_param
+		# http://api.rubyonrails.org/classes/ActiveRecord/Base.html#method-i-to_param
+		username
+	end
 end

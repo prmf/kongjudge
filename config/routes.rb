@@ -3,6 +3,7 @@ Kongjudge::Application.routes.draw do
 
   match "problems/:problem_short_title" => "problems#show", :constraints => {:problem_short_title => /[A-Z0-9]+/}
   resources :problems
+  match "users/:username" => "users#show", :constraints => {:username => /[a-zA-Z0-9]+/}
   resources :users
   resources :submissions
   resources :badges  
