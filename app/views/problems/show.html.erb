@@ -28,7 +28,7 @@
 
 	<div id="problem_time_limit">
 		<dt> Time limit </dt>
-		<dd> <%= @problem.time_limit %> seconds </dd> <!-- seconds needs to be dymanically pluralized -->
+		<dd> <%= @problem.time_limit/1000.0 %> seconds </dd> <!-- seconds needs to be dymanically pluralized -->
 	</div>
 </dl>
 
