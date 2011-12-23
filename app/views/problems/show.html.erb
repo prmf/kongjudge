@@ -1,3 +1,7 @@
+<span style="color:#FF0000">
+	<%= flash[:message] %>
+</span>
+
 <div id="problem_title">
 	<h1><%= @problem.problem_title %></h1>
 </div>
@@ -43,7 +47,14 @@
 			<br />
 			
 			<!-- this used to be actions class, but that makes the alignment look really weird. I could just edit the css to not put so much padding on the left, but I'm not sure if that's a good idea, so for now I did this -->
-			<%= f.submit "Submit Solution", :class=>"btn primary" %>
+			<br />
+			<% if current_user %>
+				<%= f.submit "Submit Solution", :class=>"btn primary" %>
+			<% else %>
+				<span style="color:#FF0000">
+					You must be logged in to submit a solution!
+				</span>
+			<% end %>
 		<% end %>
 	</div>
 </div>
