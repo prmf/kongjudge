@@ -1,35 +1,52 @@
-Welcome to show.html.erb
-
-<div class="problem_short_title">
-<%= @problem.problem_short_title %>
+<div id="problem_title">
+	<h1><%= @problem.problem_title %></h1>
 </div>
 
-<div class="problem_title">
-<%= @problem.problem_title %>
+<div id="problem_short_title">
+	<h2>Short name: <%= @problem.problem_short_title %></h2>
 </div>
 
-<div class="problem_statement">
-<%= @problem.problem_statement %>
+<br />
+
+<dl>
+	<div id="problem_statement">
+		<dt> <h3> Problem Statement </h3> </dt>
+		<dd> <%= @problem.problem_statement %> </dd>
+	</div>
+
+	<!-- Right now, this shows the actual input and output. Clearly that needs to be changed! -->
+
+	<div id="sample_input">
+		<dt> Sample Input </dt>
+		<dd> <%= @problem.input %> </dd>
+	</div>
+
+	<div id="sample_output">
+		<dt> Sample Output </dt>
+		<dd> <%= @problem.solution %> </dd>
+	</div>
+
+	<div id="problem_time_limit">
+		<dt> Time limit </dt>
+		<dd> <%= @problem.time_limit %> seconds </dd> <!-- seconds needs to be dymanically pluralized -->
+	</div>
+</dl>
+
+
+<div id="problem_submission_box">
+	<h4> Your Solution </h4>
+	<div class="input">
+		<%= form_for @submission do |f| %>
+			<%= f.text_area :code, :class => "span12", :placeholder => "Paste your solution here!" %>
+		
+			<%= f.hidden_field :problem_short_title, :value => @problem.problem_short_title %>
+			<br />
+			
+			<!-- this used to be actions class, but that makes the alignment look really weird. I could just edit the css to not put so much padding on the left, but I'm not sure if that's a good idea, so for now I did this -->
+			<%= f.submit "Submit Solution", :class=>"btn primary" %>
+		<% end %>
+	</div>
 </div>
 
-<div class="problem_time_limit">
-<%= @problem.time_limit %>
-</div>
 
 
-<div class="problem_submission_box">
-</div>
-
-
-<%= form_for @submission do |f| %>
-
-            <div class="input">
-		<%= f.text_area :code, :size => "8" %>
-              <span class="help-block">
-		Paste your solution
-              </span>
-            </div>
-	<%= f.hidden_field :problem_short_title, :value => @problem.problem_short_title %>
-	
- 	 <div class="actions"><%= f.submit "Submit Solution", :class=>"btn primary" %></div>
-<% end %>
