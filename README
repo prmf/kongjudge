@@ -5,27 +5,66 @@ Latest Spec : https://docs.google.com/document/d/1f57Xkm6ZUR1bR2X1pkGpvR1PWjtjR-
 
 What is the process for building and deploying?
 
-1) Make your changes to the project
+1) Test using a local webserver
+	+ Install Dependencies 
+		-- Install the following gems: 'savon', 'resque'
+			- use `gem install <gemname>`
+		-- Install redis
+			- refer to the bottom of this README for more instruction
+		-- Build Gemfile.lock using `bundle --without production`
+		
+	+ Create the database `rake db:migrate`
+		-- If your "rake db:migrate" fails with error "uninitialized constant Rake::DSL", add the line 'require 'rake/dsl_definition' to your Rakefile
+		
+	+ Start local redis server
+		-- Unix command may be `redis-server /usr/local/etc/redis.conf`, but this is installation and platform specific.
+	+ Start resque worker using `QUEUE=* rake environment resque:work --trace`
+		-- This worker must be restarted if you change the worker code (perform function)
+	+ Start local webserver using `rails server`
+		-- This runs a local instance;viewable at 127.0.0.1:3000
+		-- If you already have redis running as well, you can view queue web-status using `resque-web`
 
-2) Test your changes using a local webserver
-   - build Gemfile.lock using `bundle --without production`
-      - if you don't have Dev
-   - create the database `rake db:migrate`
-      - if your "rake db:migrate" fails with error "uninitialized constant Rake::DSL", add the line 'require 'rake/dsl_definition' to your Rakefile
-   - use `rails server`
-      - This runs a local instance;viewable at 127.0.0.1:3000
-
-2) git commit -m "Message stating what I did to the project"
-   -use `git status` to confirm that all your files are added before commiting
-   -remember, commit makes local changes only, you must still git push
+2) MAKING CHANGES
+	+ git commit -m "Message stating what I did to the project"
+		-- Use `git status` to confirm that all your files are added before commiting
+		-- Remember, commit makes local changes only, you must still git push
 
 3) To push changes to github repo
-   - use `git push origin master`
+	+ Use `git push origin <branchname>`
+		-- default branch name is `master`
 
+=================
 
+How do I install redis?
+	If you're on OS X, Homebrew is the simplest way to install Redis:
+		$ brew install redis
+		$ redis-server /usr/local/etc/redis.conf
+		
+	else, in a folder other than your Kong-judge installation
+		$ git clone git://github.com/defunkt/resque.git
+		$ cd resque
+		$ rake redis:install dtach:install
+		$ rake redis:start
+
+What is resque and why is it needed?
+	This manages background jobs, in our case -- so the user does not have to wait while rails handles web-service requests, such as the judging of a solution.
+	Read more at https://github.com/defunkt/resque#readme
 
 
 What if I changed GemFile?
-     You now need to push changes Gemfile and also create a new Gemfile.lock
-     by using `bundle update`.
-   
+	You now need to push changes Gemfile and also create a new Gemfile.lock
+	by using `bundle update`.
+
+How do I use branches other than master?
+	You can see all branches on our github using `git branch -a` and all branches installed on your local computer using `git branch`.
+	You can checkout a branch other than 'master' using the command `git checkout -b <branchname> origin/<branchname>`
+	You can see which branch is currently in use by typing `git branch` and seeing which branch has an asterisk next to it.
+	You can switch to any locally installed branch by using `git checkout <branchname>`
+
+How do I combine my work from another branch I created back into master?
+	1) Commit ALL work on your other branch.
+	2) `git checkout master`
+	3) `git reset --hard HEAD`
+	4) `git rebase <otherbbranch>`
+	5) now you may git push origin master, if you get an error , `git pull --rebase`
+

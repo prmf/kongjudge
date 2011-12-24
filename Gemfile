@@ -7,6 +7,8 @@ gem 'rails', '3.1.3'
 
 gem 'json'
 
+gem 'resque'
+
 gem 'devise'
 
 gem 'jquery-rails'
