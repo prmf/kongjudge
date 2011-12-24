@@ -61,7 +61,7 @@
         <div class="well">
           <ul>
 	    <% if user_signed_in? %>
-            	<li><a href="#">My Account</a></li>
+            	<li><%= link_to "My Account", user_path(current_user) %></li>
             <% else %>
             	<li><%= link_to "Register", new_user_registration_path %></li>
             <% end %>
