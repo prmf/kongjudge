@@ -19,7 +19,7 @@ class SubmissionsController < ApplicationController
 			@submission = current_user.submissions.build(:code => params[:submission][:code], :user => current_user, :problem => @curr_problem)
 			if @submission.save
 				@submission.async_send_submission(params[:submission][:code])
-				redirect_to (root_path)
+				redirect_to (user_path(current_user))
 			else
 				render :new
 			end
