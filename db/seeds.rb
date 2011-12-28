@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
+
+Problem.delete_all
+
+Problem.create(:problem_title => 'Hello world',
+:problem_short_title => 'HLLWWLRD',
+:problem_statement => %{Your job is to print the line 'Hello World'},
+:input => %{},
+:solution => %{Hello World},
+:time_limit => 500)
