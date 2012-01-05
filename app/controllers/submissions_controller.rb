@@ -15,8 +15,8 @@ class SubmissionsController < ApplicationController
 		@curr_problem = Problem.find_by_problem_short_title(problem_short_title)
 
 		if current_user
-			@submission = @curr_problem.submissions.build(:code => params[:submission][:code], :user => current_user, :problem => @curr_problem)
-			@submission = current_user.submissions.build(:code => params[:submission][:code], :user => current_user, :problem => @curr_problem)
+			@submission = @curr_problem.submissions.build(:code => params[:submission][:code], :user => current_user, :problem => @curr_problem, :result => -1)
+			@submission = current_user.submissions.build(:code => params[:submission][:code], :user => current_user, :problem => @curr_problem, :result => -1)
 			if @submission.save
 				@submission.async_send_submission(params[:submission][:code])
 				redirect_to (user_path(current_user))
