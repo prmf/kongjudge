@@ -27,6 +27,16 @@ class SubmitSubmission
 			result = submissionResult.to_array(:get_submission_status_response, :return, :item, 2, :value)
 			if result
 				#This could be improved, we are searching by id once again, instead of just passing the object here.
+				submissionDetails = client.request :get_submission_details, body: { user: "UFPTTest", pass: "finchley", link: link.first, withSource: false, withInput: false, withOutput: true, withStderr: false, withCmpinfo: false }
+				puts submissionDetails.to_array(:get_submission_details_response, :return, :item, 6, :value)
+				status = submissionDetails.to_array(:get_submission_details_response, :return, :item, 6, :value)[0]
+				until Integer(status) == 0
+					# there should probably be a better wait time and some error handling here. sometimes IDEone screws up and we could be doing this for 10 minutes or so
+					sleep(10)
+					submissionDetails = client.request :get_submission_details, body: { user: "UFPTTest", pass: "finchley", link: link.first, withSource: false, withInput: false, withOutput: true, withStderr: false, withCmpinfo: false }
+					status = submissionDetails.to_array(:get_submission_details_response, :return, :item, 6, :value)[0]
+				end
+				output = submissionDetails.to_array(:get_submission_details_response, :return, :item, 11, :value)[0]
 				@curr_submission = Submission.find_by_id(curr_submission_id)
 				@curr_submission[:result] = result.first
 				@curr_submission.save
